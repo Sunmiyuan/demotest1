@@ -18,6 +18,9 @@ public class ZczyPushService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+
+
+        /*修改*/
         super.onStartCommand(intent, flags, startId);
         return GTServiceManager.getInstance().onStartCommand(this, intent, flags, startId);
     }
